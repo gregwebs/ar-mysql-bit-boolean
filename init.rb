@@ -1,0 +1,1 @@
+require 'activerecord_mysql_bit_boolean'
