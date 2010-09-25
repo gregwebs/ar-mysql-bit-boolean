@@ -1,0 +1,3 @@
+Patches Ruby's ActiveRecord MySQL adapter. Tested on Rails 2.3.6
+
+this monkeypatch adds support for using a MySQL bit(1) field as a boolean
