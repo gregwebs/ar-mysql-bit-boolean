@@ -4,7 +4,7 @@ module ActiveRecord
     class MysqlAdapter
       def quote_with_bit_type(value, column = nil)
         if column && column.sql_type == "bit(1)"
-          tf = value.kind_of? Boolean ? value : value.to_s.include?('1')
+          tf = value.kind_of? Bool ? value : value.to_s.include?('1')
           "b'#{tf ? '1': '0'}'"
         else
           quote_without_bit_type(value, column)
